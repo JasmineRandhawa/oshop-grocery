@@ -1,0 +1,46 @@
+-------------------------------------------------------Setup and initial deploy----------------------------------------------------
+1. Create account on bFirebase and add new project oshop. Copy the config script and paste it in environment files
+   firebase:
+   {
+       apiKey: "AIzaSyD7XNsiuyYp1F4IivTgXtsr3txInDBYb6E",
+    authDomain: "oshop-grocery.firebaseapp.com",
+    databaseURL: "https://oshop-grocery-default-rtdb.firebaseio.com",
+    projectId: "oshop-grocery",
+    storageBucket: "oshop-grocery.appspot.com",
+    messagingSenderId: "732452696677",
+    appId: "1:732452696677:web:d5788bcfce935e870b8c8c"
+   }
+2. Install below:
+	npm install -g firebase-tools
+        npm i --save firebase@4.2.0 angularfire2@4.0.0-rc.1
+	npm install --save rxjs-compat
+	npm install firebase@7.24.0 angularfire2 --save
+	npm install --save firebase
+	npm i @firebase/auth
+	npm i firebase@7.24.0 angularfire2 --save
+	npm uninstall @angular/fire
+	npm i @angular/fire@6.0.4-canary.9a26fbe --save
+	npm uninstall angularfire2
+	npm install angularfire2@5.0.0-rc.9
+	npm i --save bootstrap
+3. Add import statement "@import "~bootstrap/dist/css/bootstrap.css"; " in styles.css. Go to https://getbootstrap.com/docs/4.0/examples/starter-template/ and add nav and div to app.component.html by page inspect
+
+4. Extract nav bar to another component. Create other components of oshop(products home login orders etc)
+5. Configure routes and also install npm i --save @ng-bootstrap/ng-bootstrap and add NgbModule to app module.
+6. Configure links in the nav bar and add ngbdropdown directives to dropdown - documentation code from https://ng-bootstrap.github.io/#/components/dropdown/examples
+7. run command npm i g firebase-tools
+8. cd to root folder  and run command firebase login and after authentication with google account jazzrandhawa05@gmail.com , come back to terminal and run firebase init
+9. select option hosting deploy firebase sites and github pages. autheticate github specify repo
+10. select app to deploy then choose public as "dist/oshop"
+11. run "ng build --prod" and then "firebase deploy":
+12. Hosting URL: https://oshop-grocery.web.app is created.
+13. to redeploy : firebase init hosting , overwrite : no , ng build, firebase deploy
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------Auth and login----------------------------------------------------------------------------------------------------------------------------------------------------------
+1. go to login component
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	
